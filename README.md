@@ -68,6 +68,8 @@ $$
 
 ![pretrain](assert/pretrain.png)
 
+**预训练任务：**
+
 （1）多尺度掩码语言建模（Multi-Scale MLM）：在输入蛋白质序列中，随机掩盖一部分残基或原子token（如氨基酸类别、原子种类），要求模型在上下文信息下预测被掩盖token的真实类别：
 
 
