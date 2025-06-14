@@ -72,7 +72,7 @@ $$
 
 
 $$
-\L_{MLM} = -\sum_{i \in M} \log P_{\theta}(x_i \mid x_{\setminus i})
+L_{MLM} = -\sum_{i \in M} \log P_{\theta}(x_i \mid x_{\setminus i})
 $$
 
 
@@ -94,7 +94,7 @@ $$
 
 
 $$
-L_{CE}=-\sum_{i<j}\left[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})\right]
+L_{CE}=-\sum_{i<j}[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})]
 $$
 
 
