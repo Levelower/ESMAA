@@ -94,7 +94,7 @@ $$
 
 
 $$
-L_{CE}=-\sum_{i<j}[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})]
+L_{CE}=-\sum_{i<j}\[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})\]
 $$
 
 
