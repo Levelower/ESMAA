@@ -72,21 +72,21 @@ $$
 
 
 $$
-\mathcal{L}_{\text{MLM}} = -\sum_{i \in \mathcal{M}} \log P_{\theta}(x_i \mid x_{\setminus i})
+\L_{MLM} = -\sum_{i \in M} \log P_{\theta}(x_i \mid x_{\setminus i})
 $$
 
 
-其中 $\mathcal{M}$ 表示被掩码的位置集合， $\theta$ 是模型参数， $x_i$ 是被预测的token。该任务鼓励模型学习到多尺度上下文语义。
+其中 $M$ 表示被掩码的位置集合， $\theta$ 是模型参数， $x_i$ 是被预测的token。该任务鼓励模型学习到多尺度上下文语义。
 
 （2）原子对距离恢复（Pairwise Distance Recovery, PDR）：对于序列中的残基，其所有原子坐标会添加随机扰动，模型需预测扰动后原子之间的真实对距离：
 
 
 $$
-\mathcal{L}_{\text{PDR}} = \sum_{(i,j) \in \mathcal{A}} \left\| d_{ij}^{\text{pred}} - d_{ij}^{\text{true}} \right\|^2
+L_{PDR} = \sum_{(i,j) \in A} \left\| d_{ij}^{pred} - d_{ij}^{true} \right\|^2
 $$
 
 
-其中 $\mathcal{A}$ 是残基内部原子对集合， $d_{ij}^{\text{true}}$ 是原始结构中的真实距离， $d_{ij}^{\text{pred}}$ 是模型输出的预测值。该任务促使模型理解三维几何关系。
+其中 $A$ 是残基内部原子对集合， $d_{ij}^{true}$ 是原始结构中的真实距离， $d_{ij}^{pred}$ 是模型输出的预测值。该任务促使模型理解三维几何关系。
 
 **下游任务定义：蛋白质接触图预测**
 
@@ -94,7 +94,7 @@ $$
 
 
 $$
-\mathcal{L}_{\text{CE}}=-\sum_{i<j}\left[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})\right]
+L_{CE}=-\sum_{i<j}\left[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})\right]
 $$
 
 
