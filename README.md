@@ -72,8 +72,7 @@ $$
 
 
 $$
-
-\mathcal{L}_{\mathrm{MLM}} = -\sum_{i \in \mathcal{M}} \log P_{\theta}(x_i \mid x_{\setminus i})
+\mathcal{L}_{\mathrm{MLM}} = -\sum_{i \in \mathcal{M}} \log P_{\theta}(x_i \mid x_{\setminus i})
 $$
 
 
@@ -83,8 +82,7 @@ $$
 
 
 $$
-
-\mathcal{L}_{\mathrm{PDR}} = \sum_{(i,j) \in \mathcal{A}} \left\| d_{ij}^{\text{pred}} - d_{ij}^{\text{true}} \right\|^2
+\mathcal{L}_{\mathrm{PDR}} = \sum_{(i,j) \in \mathcal{A}} \left\| d_{ij}^{\text{pred}} - d_{ij}^{\text{true}} \right\|^2
 $$
 
 
@@ -96,8 +94,7 @@ $$
 
 
 $$
-
-\mathcal{L}_{\mathrm{CE}}=-\sum_{i<j}\left[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})\right]
+\mathcal{L}_{\mathrm{CE}}=-\sum_{i<j}\left[C_{ij}\log\hat{C}_{ij}+(1-C_{ij})\log(1-\hat{C}_{ij})\right]
 $$
 
 
